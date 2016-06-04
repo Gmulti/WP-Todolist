@@ -22,7 +22,7 @@ class Todo implements HooksInterface{
      */
     public function hooks(){
 
-        add_action( "init", array($this, 'init_post_type') );
+        add_action( "init", array($this, 'initPostType') );
 
     }
 
@@ -33,7 +33,7 @@ class Todo implements HooksInterface{
      * @filter todolist_register_ PostType::CPT_TODO _post_type
      * @see Todolist\WordPress\Helpers\PostType
      */
-    public function init_post_type(){
+    public function initPostType(){
 
         $labels = array(
             'name'               => __('Todos', 'td'),
