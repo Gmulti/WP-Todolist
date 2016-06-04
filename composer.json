@@ -1,0 +1,16 @@
+{
+    "name": "WP Todolist",
+    "description": "Gestion d'une Todolist dans WordPress",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Thomas DENEULIN",
+            "email": "contact@wp-god.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Todolist\\": "src/Todolist/"
+        }
+    }
+}
