@@ -50,9 +50,6 @@ class Todo implements HooksInterface{
         $args = array(
             'labels'             => $labels,
             'public'             => true,
-            'publicly_queryable' => true,
-            'show_ui'            => true,
-            'show_in_menu'       => true,
             'query_var'          => true,
             'rewrite'            => array( 'slug' => apply_filters("todolist_rewrite_cpt_todo", "todos") ),
             'capability_type'    => 'post',
