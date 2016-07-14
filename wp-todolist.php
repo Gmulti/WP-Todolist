@@ -11,9 +11,11 @@ require_once( dirname( __FILE__ ) . '/vendor/autoload.php' );
 
 use Todolist\Todolist;
 use Todolist\WordPress\PostType\Todo;
+use Todolist\WordPress\Taxonomy\State;
 
 $actions = array(
-    new Todo()
+    new Todo(),
+    new State()
 );
 
 
