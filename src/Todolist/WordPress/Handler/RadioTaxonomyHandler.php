@@ -98,7 +98,7 @@ class RadioTaxonomyHandler implements RadioTaxonomyInterface {
             return $args;
         }
 
-        $args['walker']        = new RadioTaxonomyWalker();
+        $args['walker']        = apply_filters('td_radio_taxonomy_walker', new RadioTaxonomyWalker());
         $args['checked_ontop'] = false;
 
         return $args;
