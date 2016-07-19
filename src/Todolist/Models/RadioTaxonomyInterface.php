@@ -10,6 +10,14 @@ namespace Todolist\Models;
  */
 interface RadioTaxonomyInterface{
     
+    public function setTaxonomy($taxonomy);
+
+    public function getTaxonomy();
+
+    public function setTaxonomyObject($taxonomyObject);
+
+    public function getTaxonomyObject();
+
     /**
      * @return void
      */
