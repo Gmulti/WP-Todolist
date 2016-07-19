@@ -62,7 +62,7 @@
         <ul id="<?php echo $args["taxonomy"]; ?>checklist" data-wp-lists="list:<?php echo $args["taxonomy"]?>" class="categorychecklist form-no-clear">
             <?php 
                 wp_terms_checklist( $post->ID, array( 
-                        'taxonomy' => $args["taxonomy"], 
+                        'taxonomy'     => $args["taxonomy"], 
                         'popular_cats' => $termsPopularIds 
                     ) 
                 ) 

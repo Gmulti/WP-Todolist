@@ -69,5 +69,25 @@ class RadioTaxonomyWalker extends \Walker_Category {
         }
     }
 
+    /**
+     * Ends the element output, if needed.
+     *
+     * @since 2.1.0
+     * @access public
+     *
+     * @see Walker::end_el()
+     *
+     * @param string $output Passed by reference. Used to append additional content.
+     * @param object $page   Not used.
+     * @param int    $depth  Optional. Depth of category. Not used.
+     * @param array  $args   Optional. An array of arguments. Only uses 'list' for whether should append
+     *                       to output. See wp_list_categories(). Default empty array.
+     */
+    public function end_el( &$output, $page, $depth = 0, $args = array() ) {
+
+        $output .= "</li>\n";
+    }
+
+
 
 }

@@ -68,7 +68,7 @@ class RadioTaxonomyHandler implements RadioTaxonomyInterface {
             $label = $this->getTaxonomyObject()->labels->singular_name;
             $id    = (!is_taxonomy_hierarchical( $this->getTaxonomy() )) ? 'radio-tagsdiv-' . $this->getTaxonomy() : 'radio-' . $this->getTaxonomy() . 'div' ;
 
-            add_meta_box( $id, $label ,array( $this,'radioMetabox' ), $post_type , 'side', 'core', array( 'taxonomy'=>$this->getTaxonomy() ) );
+            add_meta_box( $id, $label ,array( $this,'radioMetabox' ), $postType , 'side', 'core', array( 'taxonomy'=>$this->getTaxonomy() ) );
         }
     }
 
@@ -94,7 +94,7 @@ class RadioTaxonomyHandler implements RadioTaxonomyInterface {
 
     public function filterChecklistArgs($args){
 
-        if( !array_key_exists("taxonomy", $args) && $this->getTaxonomy() != $args['taxonomy'] ) {
+        if( !array_key_exists("taxonomy", $args) || $this->getTaxonomy() != $args['taxonomy'] ) {
             return $args;
         }
 
