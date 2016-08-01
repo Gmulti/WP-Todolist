@@ -1,7 +1,6 @@
-# WP-Todolist
+# Tutorial Part 2
 
 You can find all the parts of the tutorial [Geekpress](http://geekpress.fr)
 
-## Parts
-
-- [Part one](https://github.com/Gmulti/WP-Todolist/tree/part-1)
+- [Part one](www.geekpress.fr/extension-wordpress-poo/)
+- [Part two](www.geekpress.fr/wp-todolist-extension-wordress-poo-part-2/)
